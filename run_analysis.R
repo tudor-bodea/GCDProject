@@ -4,7 +4,7 @@ library(dplyr)
 options(digits=10)
 
 ##################################################################################
-####################### DOWNLOAD AND UNZIP SAMSUNG ARCHIVE #######################
+##################### 0. DOWNLOAD AND UNZIP SAMSUNG ARCHIVE ######################
 ##################################################################################
 ##### TO HAVE A CLEAN START, REMOVE ALL FILES (BUT run_analysis.R) AND FOLDERS
 #####	FROM THE WORKING DIRECTORY; cURL NEEDS TO BE INSTALLED AND MADE AVAILABLE
