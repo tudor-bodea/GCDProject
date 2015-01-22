@@ -1,4 +1,5 @@
-##### Acknowledgement: Some of the ideas implemented in this work were discussed by David Hood [here] (https://class.coursera.org/getdata-010/forum/thread?thread_id=49).
+##### Acknowledgement 
+Some of the ideas implemented in this work were discussed by David Hood [here] (https://class.coursera.org/getdata-010/forum/thread?thread_id=49).
 
 
 ##### Prerequisites
