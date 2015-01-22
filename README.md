@@ -7,7 +7,7 @@ i. [`cURL`](http://curl.haxx.se/download.html) needs to be installed and made av
 
 ii. The R contributed package `dplyr` needs to be installed and loaded via `library(dplyr)`.
 
-iii. The user needs to be connected to the Internet.
+iii. (Possibly) The user needs to be connected to the Internet.
 
 
 ##### 0. Download and Unzip Samsung Archive
