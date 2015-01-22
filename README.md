@@ -12,12 +12,9 @@ iii. The user needs to be connected to the Internet.
 
 ##### 0. Download and Unzip Samsung Archive
 To have a clean start, `run_analysis.R` needs to be placed in the working directory set with `setwd`. No other files and/or folders are needed in the working directory. When run, the `run_analysis.R` script will download the Samsung archive from the Internet via `download.file` with the `extra` argument set to `curl`.  Subsequently, it will unzip the archive in the working directory via `unzip`. If these steps are successful, the working directory should consist of the following files and folders:
-
 `.\run_analysis.R`
-
-.\getdata-projectfiles-UCI HAR Dataset.zip
-
-.\UCI HAR Dataset
+`.\getdata-projectfiles-UCI HAR Dataset.zip`
+`.\UCI HAR Dataset`.
 
 
 
