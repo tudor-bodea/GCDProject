@@ -1,7 +1,10 @@
-##### Acknowledgement: Some of the ideas implemented in this work were discussed by David Hood [here] (https://class.coursera.org/getdata-010/forum/thread?thread_id=49). 
+##### Acknowledgement: Some of the ideas implemented in this work were discussed by David Hood [here] (https://class.coursera.org/getdata-010/forum/thread?thread_id=49).
+##### Prerequisites
+i. [cURL](http://curl.haxx.se/download.html) needs to be installed and made available in the search path for the executables,
+ii. The R contributed package `<dplyr>` needs to be installed and loaded.
 
 ##### 0. Download and Unzip Samsung Archive
-
+To have a clean start, 
 
 
 
