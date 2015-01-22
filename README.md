@@ -1,4 +1,4 @@
-## Acknowledgement: 
+### Acknowledgement: Many of the ideas implemented in this work were discussed by David Hood at https://class.coursera.org/getdata-010/forum/thread?thread_id=49 
 
 
 
