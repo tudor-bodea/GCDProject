@@ -33,6 +33,7 @@ subject|label|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
 -------|-----|-----------------|-----|--------------------|
 
 
+##### Task 2. Extract Measurements on Mean and Std Dev for each Measurement
 
 
 

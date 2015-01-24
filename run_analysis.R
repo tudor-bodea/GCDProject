@@ -64,7 +64,7 @@ data <- rbind(tg, tt)
 names(data) <- c("subject","label",f[,2])
 
 ##################################################################################
-######### 2. EXTRACT MEASUREMENT ON MEAN AND STD DEV FOR EACH MEASUREMENT ########
+######### 2. EXTRACT MEASUREMENTS ON MEAN AND STD DEV FOR EACH MEASUREMENT ########
 ##################################################################################
 ##### IDENTIFY WHICH COLUMNS NEED TO STAY - BESIDES subject AND label VARIABLES,
 ##### RETAIN ALL VARIABLES THAT HAVE IN THEIR NAMES THE WORDS Mean, mean OR std
