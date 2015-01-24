@@ -11,13 +11,19 @@ iii. (Possibly) The user needs to be connected to the Internet.
 
 
 ##### 0. Download and Unzip Samsung Archive
-To have a clean start, `run_analysis.R` needs to be placed in the working directory set with `setwd`. No other files and/or folders are needed in the working directory. When run,  `run_analysis.R` will download the Samsung archive from the Internet via `download.file` with the `extra` argument set to `curl`.  Subsequently, it will unzip the archive in the working directory via `unzip`. If these steps are successful, the working directory (`.`) should consist of the following files and folders: **(1)** `.\run_analysis.R` (R script), **(2)** `.\getdata-projectfiles-UCI HAR Dataset.zip` (Samsung archive) and **(3)** `.\UCI HAR Dataset` (data folder).
+To have a clean start, `run_analysis.R` needs to be placed in the working directory set with `setwd`. No other files and/or folders are needed in the working directory. When run,  `run_analysis.R` will download the Samsung archive from the Internet via `download.file` with the `extra` argument set to `curl`.  Subsequently, it will unzip the archive in the working directory via `unzip`. If these steps are successful, the working directory (`.`) should consist of the following files and folders: 
+
+(i) `.\run_analysis.R` (R script), 
+
+(ii) `.\getdata-projectfiles-UCI HAR Dataset.zip` (Samsung archive), and 
+
+(iii) `.\UCI HAR Dataset` (data folder).
 
 Since downloading the Samsung archive from the Internet takes some time, one does not always need to go through a clean start. Instead, through some minimal data validation checks, one usually skips the `download.file` and `unzip` steps. This behaviour is triggered if `.\getdata-projectfiles-UCI HAR Dataset.zip` and `.\UCI HAR Dataset` both exist in the working directory.
 
 
 ##### 1. Merge Training and Test Data Sets
-Bla, bla, bla.
+
 
 explain how the script works/where it should sit if the reader were to duplicate your work
 justify why you chose the variables that you chose - measurements on the mean and standard deviation for each measurement
