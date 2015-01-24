@@ -19,7 +19,7 @@ To have a clean start, `run_analysis.R` needs to be placed in the working direct
 
 (iii) `.\UCI HAR Dataset` (data folder).
 
-Since downloading the Samsung archive from the Internet takes some time, one does not always need to go through a clean start. Instead, through some minimal data validation checks, one usually skips the `download.file` and `unzip` steps. This behaviour is triggered if `.\getdata-projectfiles-UCI HAR Dataset.zip` and `.\UCI HAR Dataset` both exist in the working directory.
+Since downloading the Samsung archive from the Internet takes some time, one does not always need to go through a clean start. Instead, through some minimal data validation checks, one usually skips the `download.file` and `unzip` steps. This behaviour is triggered if `getdata-projectfiles-UCI HAR Dataset.zip` (Samsung archive) and `UCI HAR Dataset` (data folder) both exist in the working directory.
 
 
 ##### 1. Merge Training and Test Data Sets
