@@ -29,8 +29,8 @@ For each data set (i.e., training and test), `run_analysis.R` reads sequentially
 
 Since none of the raw data files comes with a header, `run_analysis.R` assigns a header to the `data` data frame based on the content of the feature file (see above for the reference to the data frame `f`). This header follows the structure below:
 
-subject|label|tBodyAcc\-mean()\-X|tBodyAcc-mean()-Y| ... |angle(Y,gravityMean)|angle(Z,gravityMean)|
--------|-----|-----------------|-----------------|-----|--------------------|--------------------|
+subject|label|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
+-------|-----|-----------------|-----|--------------------|
 
 
 
