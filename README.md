@@ -1,4 +1,4 @@
-#### Acknowledgement 
+#### Acknowledgement test
 Some of the ideas implemented in this work are discussed by David Hood [here] (https://class.coursera.org/getdata-010/forum/thread?thread_id=49).
 
 
