@@ -25,7 +25,7 @@ Since downloading the Samsung archive from the Internet takes some time, one doe
 ##### Task 1. Merge Training and Test Data Sets
 Before the actual merge of the training and test data sets is performed, `run_analysis.R` reads the features and the activity labels from their respective locations via `read.table`. To avoid any data type problems, `run_analysis.R` calls `read.table` with the `colClasses` argument specified explicitly (e.g., `colClasses=c("integer", "character")`). Elements of the resulting `f` and `l` data frames are used later on to name the columns of the merged data set and provide descriptive names for the activities study subjects engaged in, respectively.
 
-For each data set (i.e., training and test), `run_analysis.R` reads sequentially the content of the subject, activity and measurement files via `read.table`. As before, to avoid any data type problems, `run_analysis.R` calls `read.table` with the `colClasses` argument specified explicitly (e.g., `colClasses=c("integer")`). The resulting data frames are combined by column via `cbind` into data frames conveniently named `tg` (training) and `tt` (test), respectively. Once both data sets get their combined data frames, `run_analysis.R` creates the merged data set `data` via `rbind`. The `data` data frame consists of 10,299 subject - activity - time entries (rows) each of which shows measurements on 561 features. Considering the subject and activity fields, `data` has data organized in 563 columns. 
+For each data set (i.e., training and test), `run_analysis.R` reads sequentially the content of the subject, activity and measurement files via `read.table`. As before, to avoid any data type problems, `run_analysis.R` calls `read.table` with the `colClasses` argument specified explicitly (e.g., `colClasses=c("integer")`). The resulting data frames are combined by column via `cbind` into data frames conveniently named `tg` (training) and `tt` (test), respectively. Once both data sets get their combined data frames, `run_analysis.R` creates the merged data set `data` via `rbind`. The `data` data frame consists of 10,299 subject - activity - time entries (rows) each of which shows measurements on 561 features. Considering the subject and activity label fields, `data` has data organized in 563 columns. 
 
 Since none of the raw data files comes with a header, `run_analysis.R` assigns a header to the `data` data frame based on the content of the feature file (see above for the reference to the data frame `f`). This header follows the structure below:
 
@@ -33,8 +33,11 @@ subject|label|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
 -------|-----|-----------------|-----|--------------------|
 
 
-##### Task 2. Extract Measurements on Mean and Std Dev for each Measurement
+##### Task 2. Extract Measurements on Mean and Standard Deviation for each Measurement
+Selecting the measurements on the mean and standard deviation for each measurement is a subtle undertaking as it is unclear from the available information how the variables/features were named and/or computed. For the purpose of this project, it is assumed that all variables/features that have the words `Mean`, `mean` and `std` anywhere in their names would qualify for the task. To this end, `run_analysis.R` uses `grep` with the regular expression `"subject|label|[Mm]ean|std"` to subset the `data` data frame. Of the 561 original features, `grep` retains 86. Considering the subject and activity label fields, `data` has now 10,299 rows and 88 columns.
 
+##### Task 3. Use Descriptive activity names
+ 
 
 
 
