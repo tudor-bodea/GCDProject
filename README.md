@@ -50,7 +50,7 @@ Through a series of `gsub` and `sub` commands, `run_analysis.R` formats the name
 
 (i) `-` are replaced by `.`,
 
-(ii) `T`s and `F`s are replaced by `Time` and `Frequency`,
+(ii) `T` and `F` are expanded and replaced by `Time` and `Frequency`,
 
 (iii) `Acc` is expanded and replaced by `Acceleration`,
 
@@ -60,7 +60,14 @@ Through a series of `gsub` and `sub` commands, `run_analysis.R` formats the name
 
 (vi) `(,`, `)`, and `,` are all replaced by `.`.
 
-All these changes are inspired by the Google's R style guide for variable naming available [here](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
+All these changes are inspired by the Google's R Style Guide for Variable Naming available [here](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
+
+The data frame `data` shows now entries that look as follows:
+
+Subject|Activity|TimeBodyAcceleration.Mean.X| ... |Angle.Z.GravityMean|
+-------|--------|---------------------------|-----|-------------------|
+1|Standing|0.28858451|...|-0.058626924|
+...|||||
 
 ##### Task 5. CREATE TIDY DATA SET
 
