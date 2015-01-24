@@ -3,21 +3,21 @@ Some of the ideas implemented in this work are discussed by David Hood [here] (h
 
 
 ##### Prerequisites
-i. [`cURL`](http://curl.haxx.se/download.html) needs to be installed and made available in the search path for the executables.
+**i.** [`cURL`](http://curl.haxx.se/download.html) needs to be installed and made available in the search path for the executables.
 
-ii. The R contributed package `dplyr` needs to be installed and loaded via `library(dplyr)`.
+**ii.** The R contributed package `dplyr` needs to be installed and loaded via `library(dplyr)`.
 
-iii. (Possibly) The user needs to be connected to the Internet.
+**iii.** (Possibly) The user needs to be connected to the Internet.
 
 
 ##### Download and Unzip Samsung Archive
 To have a clean start, `run_analysis.R` needs to be placed in the working directory set with `setwd`. No other files and/or folders are needed in the working directory. When run,  `run_analysis.R` will download the Samsung archive from the Internet via `download.file` with the `extra` argument set to `curl`.  Subsequently, it will unzip the archive in the working directory via `unzip`. If these steps are successful, the working directory (`.`) should consist of the following files and folders: 
 
-(i) `.\run_analysis.R` (R script), 
+**i.** `.\run_analysis.R` (R script), 
 
-(ii) `.\getdata-projectfiles-UCI HAR Dataset.zip` (Samsung archive), and, 
+**ii.** `.\getdata-projectfiles-UCI HAR Dataset.zip` (Samsung archive), and, 
 
-(iii) `.\UCI HAR Dataset` (data folder).
+**iii.** `.\UCI HAR Dataset` (data folder).
 
 Since downloading the Samsung archive from the Internet takes some time, one does not always need to go through a clean start. Instead, through some minimal data validation checks, one usually skips the `download.file` and `unzip` steps. This behaviour is triggered if `getdata-projectfiles-UCI HAR Dataset.zip` (Samsung archive) and `UCI HAR Dataset` (data folder) both exist in the working directory.
 
@@ -48,19 +48,19 @@ subject|activity|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
 ##### Task 4. Label Data Set with Descriptive Variable Names
 Through a series of `gsub` and `sub` commands, `run_analysis.R` formats the names of the variables in the `data` data frame such that:
 
-(i) `-` are replaced by `.`,
+**i.** `-` are replaced by `.`,
 
-(ii) `T` and `F` are expanded and replaced by `Time` and `Frequency`,
+**ii.** `T` and `F` are expanded and replaced by `Time` and `Frequency`,
 
-(iii) `Acc` is expanded and replaced by `Acceleration`,
+**iii.** `Acc` is expanded and replaced by `Acceleration`,
 
-(iv) `()` is replaced by an empty string,
+**iv.** `()` is replaced by an empty string,
 
-(v) `BodyBody` is replaced by `Body`,
+**v.** `BodyBody` is replaced by `Body`,
 
-(vi) `(,`, `)`, and `,` are all replaced by `.`, and,
+**vi.** `(,`, `)`, and `,` are all replaced by `.`, and,
 
-(vii) the Camel case format is enforced.
+**vii.** the Camel case format is enforced.
 
 All these changes are inspired by the Google's R Style Guide for Variable Naming available [here](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
 
@@ -92,9 +92,8 @@ replica <- read.table(file="TudorBodea_tidy.csv", header=TRUE, sep="|",
 
 
 
-explain how the script works/where it should sit if the reader were to duplicate your work
 Was code book submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
-provide the reader with how the tidy set is to be loaded back in R
+
 
 
 
