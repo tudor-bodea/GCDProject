@@ -39,8 +39,8 @@ Selecting the measurements on the mean and standard deviation for each measureme
 ##### Task 3. Use Descriptive activity names
 Through a succession of `gsub` commands, `run_analysis.R` formats the activity labels from the `l` data frame by enforcing a Camel case format. In doing so, the unpleasant `WALKING_DOWNSTAIRS` label, for example, becomes now the more appealing `Walking Downstairs`. Then, via the `merge` command, `run_analysis.R` merges the `data` and `l` data frames to associate the descriptive activity names from `l` to the corresponding activity codes from `data`. Through some other simple subsetting operations, `data` shows now entries that look just like the below:
 
-subject|label|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
--------|-----|-----------------|-----|--------------------|
+subject|activity|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
+-------|--------|-----------------|-----|--------------------|
 1|Standing|0.28858451|...|-0.058626924|
 ...|||||
 
