@@ -23,6 +23,7 @@ Since downloading the Samsung archive from the Internet takes some time, one doe
 
 
 ##### Task 1. Merge Training and Test Data Sets
+Before the actual merge of the training and test data sets is initiated, `run_analysis.R` reads the features and the activity labels from their respective locations via `read.table`. To avoid any data type problems, `run_analysis.R` calls `read.table` with the `colClasses` argument specified. Elements of the resulting `f` and `l` data frames will be used later on to name the columns of the merged data set and provide descriptive names for the activities study subjects engaged in.
 
 
 explain how the script works/where it should sit if the reader were to duplicate your work
@@ -30,3 +31,9 @@ justify why you chose the variables that you chose - measurements on the mean an
 refer to Google's R Style Guide for variable naming
 Was code book submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
 provide the reader with how the tidy set is to be loaded back in R
+
+
+
+
+
+
