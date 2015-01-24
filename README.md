@@ -23,7 +23,26 @@ Since downloading the Samsung archive from the Internet takes some time, one doe
 
 
 ##### Task 1. Merge Training and Test Data Sets
-Before the actual merge of the training and test data sets is initiated, `run_analysis.R` reads the features and the activity labels from their respective locations via `read.table`. To avoid any data type problems, `run_analysis.R` calls `read.table` with the `colClasses` argument specified. Elements of the resulting `f` and `l` data frames will be used later on to name the columns of the merged data set and provide descriptive names for the activities study subjects engaged in.
+Before the actual merge of the training and test data sets is initiated, `run_analysis.R` reads the features and the activity labels from their respective locations via `read.table`. To avoid any data type problems, `run_analysis.R` calls `read.table` with the `colClasses` argument specified explicitly. Elements of the resulting `f` and `l` data frames will be used later on to name the columns of the merged data set and provide descriptive names for the activities study subjects engaged in, respectively.
+
+For each data set (i.e., training and test), `run_analysis.R` reads sequentially the content of the subject, activity and measurement files via `read.table`. As before, to avoid any data type problems, `run_analysis.R` calls `read.table` with the `colClasses` argument specified explicitly. The resulting data frames are combined by column via `cbind` into data frames conveniently named `tg` (training) and `tt` (test), respectively. Once both data sets get their combined data frames, `run_analysis.R` creates the merged data set `data` via `rbind'. The `data` data frame consists of 10,299 subject - activity - time entries (rows) each of which shows measurements on 561 features. Considering the subject and activity fields, `data` has data organized in 563 columns. 
+
+Since none of the raw data files comes with a header, `run_analysis.R` assigns a header to the `data` data frame based on the content of the feature file (see above for the reference to the data frame `f`). This header follows the structure below:
+
+subject|label|tBodyAcc-mean()-X|tBodyAcc-mean()-Y| ... |angle(Y,gravityMean)|angle(Z,gravityMean)|
+-------|-----|-----------------|-----------------|-----|--------------------|--------------------|
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 explain how the script works/where it should sit if the reader were to duplicate your work
