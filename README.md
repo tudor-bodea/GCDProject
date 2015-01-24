@@ -37,7 +37,12 @@ subject|label|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
 Selecting the measurements on the mean and standard deviation for each measurement is a subtle undertaking as it is unclear from the available information how the variables/features were named and/or computed. For the purpose of this project, it is assumed that all variables/features that have the words `Mean`, `mean` and `std` anywhere in their names would qualify for the task. Since there are no variants of `std` in the feature file that show any upper case letters, these instances are not considered explicitly in the match. To this end, `run_analysis.R` uses `grep` with the regular expression `"subject|label|[Mm]ean|std"` to subset the `data` data frame. Of the 561 original features, `grep` retains 86. Considering the subject and activity label fields, `data` has now 10,299 rows and 88 columns.
 
 ##### Task 3. Use Descriptive activity names
- 
+Through a succession of `gsub` commands, `run_analysis.R` formats the activity labels from the `l` data frame by enforcing a Camel case format. In doing so, the unpleasant `WALKING_DOWNSTAIRS` label, for example, becomes now the more appealing `Walking Downstairs`. Then, via the `merge` command, `run_analysis.R` merges the `data` and `l` data frames to associate the descriptive activity names from `l` to the corresponding activity codes from `data`. Through some other simple subsetting operations, `data` shows now entries that look just like the below:
+
+subject|label|tBodyAcc-mean()-X| ... |angle(Z,gravityMean)|
+-------|-----|-----------------|-----|--------------------|
+1|Standing|0.28858451|...|-0.058626924|
+...|||||
 
 
 
