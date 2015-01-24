@@ -56,9 +56,11 @@ Through a series of `gsub` and `sub` commands, `run_analysis.R` formats the name
 
 (iv) `()` is replaced by an empty string,
 
-(v) `BodyBody` is replaced by `Body`, and,
+(v) `BodyBody` is replaced by `Body`,
 
-(vi) `(,`, `)`, and `,` are all replaced by `.`.
+(vi) `(,`, `)`, and `,` are all replaced by `.`, and,
+
+(vii) the Camel case format is enforced.
 
 All these changes are inspired by the Google's R Style Guide for Variable Naming available [here](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
 
@@ -69,8 +71,18 @@ Subject|Activity|TimeBodyAcceleration.Mean.X| ... |Angle.Z.GravityMean|
 1|Standing|0.28858451|...|-0.058626924|
 ...|||||
 
-##### Task 5. CREATE TIDY DATA SET
 
+##### Task 5. Create Tidy Data Set
+`run_analysis.R` creates the tidy data set via the `summarise_each` and `group_by` commands from the `dplyr` contributed package. This data set is printed to a file via `write.table` and can be re-read in R using the `read.table` command. Both of these commands, as they are used in `run_analysis.R`, are provided below:
+
+```
+##### WRITE TO FILE
+write.table(x=tidy, file="TudorBodea_tidy.csv", quote=FALSE, sep="|", 
+	row.names=FALSE, col.names=TRUE)
+##### READ THE FILE BACK IN R
+replica <- read.table(file="TudorBodea_tidy.csv", header=TRUE, sep="|", 
+	colClasses=c("integer","character",rep("numeric", times=86)))
+```
 
 
 
@@ -81,8 +93,6 @@ Subject|Activity|TimeBodyAcceleration.Mean.X| ... |Angle.Z.GravityMean|
 
 
 explain how the script works/where it should sit if the reader were to duplicate your work
-justify why you chose the variables that you chose - measurements on the mean and standard deviation for each measurement
-refer to Google's R Style Guide for variable naming
 Was code book submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
 provide the reader with how the tidy set is to be loaded back in R
 
