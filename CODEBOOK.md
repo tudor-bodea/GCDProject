@@ -40,9 +40,11 @@ replica <- read.table(file="TudorBodea_tidy.csv", header=TRUE, sep="|",
 
 
 #### 3. Process
-When the `data` data frame is first computed, it consists of a column `subject` that identifies the study subjects, a column `label` that provides the numeric codes for the activities the study subjects engaged in, and other 561 measurement data columns identified by the names provided in the feature raw data set. Through a series of connected data steps, this data frame is transformed and ultimately used to create the `tidy` data frame. The process that incorporates the data steps is documented below:
+When the `data` data frame is first computed, it consists of a column `subject` that identifies the study subjects, a column `label` that provides the numeric codes for the activities the study subjects engaged in, and other 561 measurement data columns identified by the names provided in the feature raw data set. Through a series of connected data steps, this data frame is transformed and ultimately used to create the `tidy` data frame. The process that incorporates the interdependent data steps is documented below:
 
-**(i)** Test
+**(i)** As it is unclear from the original documentation how the features were named or constructed, all 86 features that have `Mean`, `mean`, or `std` in their names are retained and considered in the subsequent data steps. The `data` data frame is left with 88 columns (`subject`, `label` and the other 86 qualified features).
+
+**(ii)** The activity codes previously used in `label` are replaced with the corresponding Camel case descriptive activity names. For example, a previous `label` of 5 becomes now `Standing`.
 
 
 
