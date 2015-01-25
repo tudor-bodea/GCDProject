@@ -1,4 +1,4 @@
-#### 1. Inputs and Raw Data Sources
+#### 1. Raw Data Sources, Inputs and Intermediate Data Sets
 The following inputs are used to create the intermediate, support data sets:
 
 **(i)** Data frame `f` of size 561 x 2 reads the features from the raw data set `./UCI HAR Dataset/features.txt`,
@@ -26,7 +26,7 @@ The following intermediate, support data sets are used to create the tidy data s
 **(xi)** Data frame `data` of size 10,299 by 563 combines by rows the training and test data frames `tg` and `tt`.
 
 #### 2. Output
-The `tidy` data frame is obtained from the data frame `data` by averaging all the columns in `data` by `Subject` and `Activity` (via `summarise_each` and `group_by` commands from the contributed package [`dplyr`](http://cran.r-project.org/web/packages/dplyr/index.html)). 
+The `tidy` data frame is obtained from the `data` data frame by averaging all the columns in `data` by `Subject` and `Activity` (via `summarise_each` and `group_by` commands from the contributed package [`dplyr`](http://cran.r-project.org/web/packages/dplyr/index.html)). 
 
 Describe the tidy data set - pipe delimited
 
