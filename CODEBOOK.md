@@ -1,11 +1,11 @@
-#### Inputs and Data Sources
+#### 1. Inputs and Data Sources
 
-#### Output
+#### 2. Output
 
 Describe the tidy data set - pipe delimited
 
 Provide how the file is to be re-read in R
 
-#### Process
+#### 3. Process
 
-#### Output Data Dictionary
+#### 4. Output Data Dictionary
