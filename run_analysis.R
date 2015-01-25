@@ -114,10 +114,10 @@ names(data) <- tmp
 ##### COMPUTE AVERAGE BY SUBJECT AND ACTIVITY
 tidy <- summarise_each(group_by(data,Subject,Activity), funs(mean))
 ##### WRITE TO FILE
-write.table(x=tidy, file="TudorBodea_tidy.csv", quote=FALSE, sep="|", 
+write.table(x=tidy, file="TudorBodea_tidy.txt", quote=FALSE, sep="|", 
 	row.names=FALSE, col.names=TRUE)
 ##### READ THE FILE BACK IN R
-replica <- read.table(file="TudorBodea_tidy.csv", header=TRUE, sep="|", 
+replica <- read.table(file="TudorBodea_tidy.txt", header=TRUE, sep="|", 
 	colClasses=c("integer","character",rep("numeric", times=86)))
 
 
