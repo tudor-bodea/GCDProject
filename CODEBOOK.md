@@ -23,7 +23,7 @@ The following intermediate, support data sets are used to create the tidy data s
 
 **(x)** Data frame `tt` of size 2,947 by 563 combines by columns test data frames `tt.s`, `tt.l`, and, `tt.d`,
 
-**(xi)** Data frame `data` of size 10,299 by 563 combines by rows the training and test data frames `tg` and `tt`. Through the process discussed below, data frame `data` goes from 563 columns to 88 columns. Its number of rows, however, stays unchanged at 10,299.
+**(xi)** Data frame `data`, with an original size of 10,299 by 563, combines by rows the training and test data frames `tg` and `tt`. Through the process discussed below, data frame `data` goes from 563 columns to 88 columns. Its number of rows, however, stays unchanged at 10,299.
 
 
 #### 2. Outputs
