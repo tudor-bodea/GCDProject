@@ -208,19 +208,32 @@ The 88 variables in the `tidy` data frame follow next:
 
 (fBodyBodyAccJerkMag-meanFreq()) **FrequencyBodyAccelerationJerkMag.MeanFreq** - By subject and activity, the mean frequency of the magnitude of the frequency domain body acceleration jerk.
 
-(fBodyBodyGyroMag-mean()) FrequencyBodyGyroMag.Mean
-(fBodyBodyGyroMag-std()) FrequencyBodyGyroMag.Std
-(fBodyBodyGyroMag-meanFreq()) FrequencyBodyGyroMag.MeanFreq
-(fBodyBodyGyroJerkMag-mean()) FrequencyBodyGyroJerkMag.Mean
-(fBodyBodyGyroJerkMag-std()) FrequencyBodyGyroJerkMag.Std
-(fBodyBodyGyroJerkMag-meanFreq()) FrequencyBodyGyroJerkMag.MeanFreq
-(angle(tBodyAccMean,gravity)) Angle.TimeBodyAccelerationMean.Gravity
-(angle(tBodyAccJerkMean),gravityMean)) Angle.TimeBodyAccelerationJerkMean.GravityMean
-(angle(tBodyGyroMean,gravityMean)) Angle.TimeBodyGyroMean.GravityMean
-(angle(tBodyGyroJerkMean,gravityMean)) Angle.TimeBodyGyroJerkMean.GravityMean
-(angle(X,gravityMean)) Angle.X.GravityMean
-(angle(Y,gravityMean)) Angle.Y.GravityMean
-(angle(Z,gravityMean)) Angle.Z.GravityMean
+(fBodyBodyGyroMag-mean()) **FrequencyBodyGyroMag.Mean**
+
+(fBodyBodyGyroMag-std()) **FrequencyBodyGyroMag.Std**
+
+(fBodyBodyGyroMag-meanFreq()) **FrequencyBodyGyroMag.MeanFreq**
+
+(fBodyBodyGyroJerkMag-mean()) **FrequencyBodyGyroJerkMag.Mean**
+
+(fBodyBodyGyroJerkMag-std()) **FrequencyBodyGyroJerkMag.Std**
+
+(fBodyBodyGyroJerkMag-meanFreq()) **FrequencyBodyGyroJerkMag.MeanFreq**
+
+(angle(tBodyAccMean,gravity)) **Angle.TimeBodyAccelerationMean.Gravity**
+
+(angle(tBodyAccJerkMean),gravityMean)) **Angle.TimeBodyAccelerationJerkMean.GravityMean**
+
+(angle(tBodyGyroMean,gravityMean)) **Angle.TimeBodyGyroMean.GravityMean**
+
+(angle(tBodyGyroJerkMean,gravityMean)) **Angle.TimeBodyGyroJerkMean.GravityMean**
+
+(angle(X,gravityMean)) **Angle.X.GravityMean**
+
+(angle(Y,gravityMean)) **Angle.Y.GravityMean**
+
+(angle(Z,gravityMean)) **Angle.Z.GravityMean**
+
 
 
 
