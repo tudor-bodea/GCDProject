@@ -52,9 +52,9 @@ When the `data` data frame is first computed, it consists of a column `subject` 
 
 
 #### 4. Output Data Dictionary
-This section lists and documents the content of the `tidy` data frame (180 rows & 88 columns). Since the original features were normalized between -1 and 1, all average variables in the `tidy` data frame are unit-less. To facilitate the review of the submission, the following pattern is used when documenting the variables in the tidy data set: 
+This section lists and documents the content of the `tidy` data frame (180 rows & 88 columns). Since the original features were normalized between -1 and 1, all average variables in the `tidy` data frame are unit-less. To facilitate the review of the submission, the following pattern is used when documenting the variables in the tidy data set: <<(Original Feature Name) **Tidy Variable Name** - Description>>.
 
-(Original Feature Name) **Tidy Variable Name** - Description.
+The 88 variables in the `tidy` data frame follow next:
 
 (subject) **Subject** - Study subject. Numeric categorical variable with levels 1 thorough 30.
 
