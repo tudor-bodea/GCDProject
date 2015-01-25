@@ -52,12 +52,12 @@ When the `data` data frame is first computed, it consists of a column `subject` 
 
 
 #### 4. Output Data Dictionary
-The table in this section lists and documents the content of the `tidy` data frame (180 rows & 88 columns).
+The table in this section lists and documents the content of the `tidy` data frame (180 rows & 88 columns). Since the original features were normalized between -1 and 1, all average variables in the `tidy` data frame are unit-less.
 
 Index|Original Feature Name|Tidy Variable Name|Description|
 -----|---------------------|------------------|-----------|
-1|subject|Subject|
-2|label|Activity|
+1|subject|Subject|Study subject. Numeric categorical variable with levels 1 thorough 30.
+2|label|Activity|Activity the study subjects engaged in. Categorical variable (Laying, Sitting, Standing, Walking, Walking Downstairs, Walking Upstairs).
 3|tBodyAcc-mean()-X|TimeBodyAcceleration.Mean.X|
 4|tBodyAcc-mean()-Y|TimeBodyAcceleration.Mean.Y|
 5|tBodyAcc-mean()-Z|TimeBodyAcceleration.Mean.Z|
