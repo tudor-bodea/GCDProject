@@ -54,6 +54,7 @@ When the `data` data frame is first computed, it consists of a column `subject` 
 #### 4. Output Data Dictionary
 The table in this section lists and documents the content of the `tidy` data frame (180 rows & 88 columns). Since the original features were normalized between -1 and 1, all average variables in the `tidy` data frame are unit-less.
 
+```
 Index|Original Feature Name|Tidy Variable Name|Description|
 -----|---------------------|------------------|-----------|
 1|subject|Subject|Study subject. Numeric categorical variable with levels 1 thorough 30.
@@ -144,7 +145,7 @@ Index|Original Feature Name|Tidy Variable Name|Description|
 86|angle(X,gravityMean)|Angle.X.GravityMean|
 87|angle(Y,gravityMean)|Angle.Y.GravityMean|
 88|angle(Z,gravityMean)|Angle.Z.GravityMean|
-
+```
 
 
 
