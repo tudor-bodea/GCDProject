@@ -142,12 +142,18 @@ The 88 variables in the `tidy` data frame follow next:
 
 (tBodyGyroJerkMag-std()) **TimeBodyGyroJerkMag.Std** - By subject and activity, the mean of the standard deviation of the magnitude of the time domain body gyro jerk.
 
-(fBodyAcc-mean()-X) FrequencyBodyAcceleration.Mean.X
-(fBodyAcc-mean()-Y) FrequencyBodyAcceleration.Mean.Y
-(fBodyAcc-mean()-Z) FrequencyBodyAcceleration.Mean.Z
-(fBodyAcc-std()-X) FrequencyBodyAcceleration.Std.X
-(fBodyAcc-std()-Y) FrequencyBodyAcceleration.Std.Y
-(fBodyAcc-std()-Z) FrequencyBodyAcceleration.Std.Z
+(fBodyAcc-mean()-X) **FrequencyBodyAcceleration.Mean.X** - By subject and activity, the mean of the frequency domain body acceleration in the X direction.
+
+(fBodyAcc-mean()-Y) **FrequencyBodyAcceleration.Mean.Y** - By subject and activity, the mean of the frequency domain body acceleration in the Y direction.
+
+(fBodyAcc-mean()-Z) **FrequencyBodyAcceleration.Mean.Z** - By subject and activity, the mean of the frequency domain body acceleration in the Z direction.
+
+(fBodyAcc-std()-X) **FrequencyBodyAcceleration.Std.X** - By subject and activity, the mean of the standard deviation of the frequency domain body acceleration in the X direction.
+
+(fBodyAcc-std()-Y) **FrequencyBodyAcceleration.Std.Y** - By subject and activity, the mean of the standard deviation of the frequency domain body acceleration in the Y direction.
+
+(fBodyAcc-std()-Z) **FrequencyBodyAcceleration.Std.Z** - By subject and activity, the mean of the standard deviation of the frequency domain body acceleration in the Z direction.
+
 (fBodyAcc-meanFreq()-X) FrequencyBodyAcceleration.MeanFreq.X
 (fBodyAcc-meanFreq()-Y) FrequencyBodyAcceleration.MeanFreq.Y
 (fBodyAcc-meanFreq()-Z) FrequencyBodyAcceleration.MeanFreq.Z
