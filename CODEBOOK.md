@@ -220,23 +220,16 @@ The 88 variables in the `tidy` data frame follow next:
 
 (fBodyBodyGyroJerkMag-meanFreq()) **FrequencyBodyGyroJerkMag.MeanFreq** - By subject and activity, the mean frequency of the magnitude of the frequency domain body gyro jerk.
 
-(angle(tBodyAccMean,gravity)) **Angle.TimeBodyAccelerationMean.Gravity**
+(angle(tBodyAccMean,gravity)) **Angle.TimeBodyAccelerationMean.Gravity** - By subject and activity, the mean angle between the mean time domain body acceleration and gravity.
 
-(angle(tBodyAccJerkMean),gravityMean)) **Angle.TimeBodyAccelerationJerkMean.GravityMean**
+(angle(tBodyAccJerkMean),gravityMean)) **Angle.TimeBodyAccelerationJerkMean.GravityMean** - By subject and activity, the mean angle between the mean time domain body acceleration jerk and the mean gravity.
 
-(angle(tBodyGyroMean,gravityMean)) **Angle.TimeBodyGyroMean.GravityMean**
+(angle(tBodyGyroMean,gravityMean)) **Angle.TimeBodyGyroMean.GravityMean** - By subject and activity, the mean angle between the mean time domain body gyro and the mean gravity.
 
-(angle(tBodyGyroJerkMean,gravityMean)) **Angle.TimeBodyGyroJerkMean.GravityMean**
+(angle(tBodyGyroJerkMean,gravityMean)) **Angle.TimeBodyGyroJerkMean.GravityMean** - By subject and activity, the mean angle between the mean time domain body gyro jerk and the mean gravity.
 
-(angle(X,gravityMean)) **Angle.X.GravityMean**
+(angle(X,gravityMean)) **Angle.X.GravityMean** - By subject and activity, the mean angle between the X direction and the mean gravity.
 
-(angle(Y,gravityMean)) **Angle.Y.GravityMean**
+(angle(Y,gravityMean)) **Angle.Y.GravityMean** - By subject and activity, the mean angle between the Y direction and the mean gravity.
 
-(angle(Z,gravityMean)) **Angle.Z.GravityMean**
-
-
-
-
-
-
-
+(angle(Z,gravityMean)) **Angle.Z.GravityMean** - By subject and activity, the mean angle between the Z direction and the mean gravity.
