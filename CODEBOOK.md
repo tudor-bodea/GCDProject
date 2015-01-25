@@ -55,94 +55,94 @@ When the `data` data frame is first computed, it consists of a column `subject` 
 The table in this section lists and documents the content of the `tidy` data frame (180 rows & 88 columns). Since the original features were normalized between -1 and 1, all average variables in the `tidy` data frame are unit-less.
 
 ```
-|subject|Subject - Study subject. Numeric categorical variable with levels 1 thorough 30.
-|label|Activity - Activity the study subjects engaged in. Categorical variable (Laying, Sitting, Standing, Walking, Walking Downstairs, Walking Upstairs).
-|tBodyAcc-mean()-X|TimeBodyAcceleration.Mean.X|
-|tBodyAcc-mean()-Y|TimeBodyAcceleration.Mean.Y|
-|tBodyAcc-mean()-Z|TimeBodyAcceleration.Mean.Z|
-|tBodyAcc-std()-X|TimeBodyAcceleration.Std.X|
-|tBodyAcc-std()-Y|TimeBodyAcceleration.Std.Y|
-|tBodyAcc-std()-Z|TimeBodyAcceleration.Std.Z|
-|tGravityAcc-mean()-X|TimeGravityAcceleration.Mean.X|
-|tGravityAcc-mean()-Y|TimeGravityAcceleration.Mean.Y|
-|tGravityAcc-mean()-Z|TimeGravityAcceleration.Mean.Z|
-|tGravityAcc-std()-X|TimeGravityAcceleration.Std.X|
-|tGravityAcc-std()-Y|TimeGravityAcceleration.Std.Y|
-|tGravityAcc-std()-Z|TimeGravityAcceleration.Std.Z|
-|tBodyAccJerk-mean()-X|TimeBodyAccelerationJerk.Mean.X|
-|tBodyAccJerk-mean()-Y|TimeBodyAccelerationJerk.Mean.Y|
-|tBodyAccJerk-mean()-Z|TimeBodyAccelerationJerk.Mean.Z|
-|tBodyAccJerk-std()-X|TimeBodyAccelerationJerk.Std.X|
-|tBodyAccJerk-std()-Y|TimeBodyAccelerationJerk.Std.Y|
-|tBodyAccJerk-std()-Z|TimeBodyAccelerationJerk.Std.Z|
-|tBodyGyro-mean()-X|TimeBodyGyro.Mean.X|
-|tBodyGyro-mean()-Y|TimeBodyGyro.Mean.Y|
-|tBodyGyro-mean()-Z|TimeBodyGyro.Mean.Z|
-|tBodyGyro-std()-X|TimeBodyGyro.Std.X|
-|tBodyGyro-std()-Y|TimeBodyGyro.Std.Y|
-|tBodyGyro-std()-Z|TimeBodyGyro.Std.Z|
-|tBodyGyroJerk-mean()-X|TimeBodyGyroJerk.Mean.X|
-|tBodyGyroJerk-mean()-Y|TimeBodyGyroJerk.Mean.Y|
-|tBodyGyroJerk-mean()-Z|TimeBodyGyroJerk.Mean.Z|
-|tBodyGyroJerk-std()-X|TimeBodyGyroJerk.Std.X|
-|tBodyGyroJerk-std()-Y|TimeBodyGyroJerk.Std.Y|
-|tBodyGyroJerk-std()-Z|TimeBodyGyroJerk.Std.Z|
-|tBodyAccMag-mean()|TimeBodyAccelerationMag.Mean|
-|tBodyAccMag-std()|TimeBodyAccelerationMag.Std|
-|tGravityAccMag-mean()|TimeGravityAccelerationMag.Mean|
-|tGravityAccMag-std()|TimeGravityAccelerationMag.Std|
-|tBodyAccJerkMag-mean()|TimeBodyAccelerationJerkMag.Mean|
-|tBodyAccJerkMag-std()|TimeBodyAccelerationJerkMag.Std|
-|tBodyGyroMag-mean()|TimeBodyGyroMag.Mean|
-|tBodyGyroMag-std()|TimeBodyGyroMag.Std|
-|tBodyGyroJerkMag-mean()|TimeBodyGyroJerkMag.Mean|
-|tBodyGyroJerkMag-std()|TimeBodyGyroJerkMag.Std|
-|fBodyAcc-mean()-X|FrequencyBodyAcceleration.Mean.X|
-|fBodyAcc-mean()-Y|FrequencyBodyAcceleration.Mean.Y|
-|fBodyAcc-mean()-Z|FrequencyBodyAcceleration.Mean.Z|
-|fBodyAcc-std()-X|FrequencyBodyAcceleration.Std.X|
-|fBodyAcc-std()-Y|FrequencyBodyAcceleration.Std.Y|
-|fBodyAcc-std()-Z|FrequencyBodyAcceleration.Std.Z|
-|fBodyAcc-meanFreq()-X|FrequencyBodyAcceleration.MeanFreq.X|
-|fBodyAcc-meanFreq()-Y|FrequencyBodyAcceleration.MeanFreq.Y|
-|fBodyAcc-meanFreq()-Z|FrequencyBodyAcceleration.MeanFreq.Z|
-|fBodyAccJerk-mean()-X|FrequencyBodyAccelerationJerk.Mean.X|
-|fBodyAccJerk-mean()-Y|FrequencyBodyAccelerationJerk.Mean.Y|
-|fBodyAccJerk-mean()-Z|FrequencyBodyAccelerationJerk.Mean.Z|
-|fBodyAccJerk-std()-X|FrequencyBodyAccelerationJerk.Std.X|
-|fBodyAccJerk-std()-Y|FrequencyBodyAccelerationJerk.Std.Y|
-|fBodyAccJerk-std()-Z|FrequencyBodyAccelerationJerk.Std.Z|
-|fBodyAccJerk-meanFreq()-X|FrequencyBodyAccelerationJerk.MeanFreq.X|
-|fBodyAccJerk-meanFreq()-Y|FrequencyBodyAccelerationJerk.MeanFreq.Y|
-|fBodyAccJerk-meanFreq()-Z|FrequencyBodyAccelerationJerk.MeanFreq.Z|
-|fBodyGyro-mean()-X|FrequencyBodyGyro.Mean.X|
-|fBodyGyro-mean()-Y|FrequencyBodyGyro.Mean.Y|
-|fBodyGyro-mean()-Z|FrequencyBodyGyro.Mean.Z|
-|fBodyGyro-std()-X|FrequencyBodyGyro.Std.X|
-|fBodyGyro-std()-Y|FrequencyBodyGyro.Std.Y|
-|fBodyGyro-std()-Z|FrequencyBodyGyro.Std.Z|
-|fBodyGyro-meanFreq()-X|FrequencyBodyGyro.MeanFreq.X|
-|fBodyGyro-meanFreq()-Y|FrequencyBodyGyro.MeanFreq.Y|
-|fBodyGyro-meanFreq()-Z|FrequencyBodyGyro.MeanFreq.Z|
-|fBodyAccMag-mean()|FrequencyBodyAccelerationMag.Mean|
-|fBodyAccMag-std()|FrequencyBodyAccelerationMag.Std|
-|fBodyAccMag-meanFreq()|FrequencyBodyAccelerationMag.MeanFreq|
-|fBodyBodyAccJerkMag-mean()|FrequencyBodyAccelerationJerkMag.Mean|
-|fBodyBodyAccJerkMag-std()|FrequencyBodyAccelerationJerkMag.Std|
-|fBodyBodyAccJerkMag-meanFreq()|FrequencyBodyAccelerationJerkMag.MeanFreq|
-|fBodyBodyGyroMag-mean()|FrequencyBodyGyroMag.Mean|
-|fBodyBodyGyroMag-std()|FrequencyBodyGyroMag.Std|
-|fBodyBodyGyroMag-meanFreq()|FrequencyBodyGyroMag.MeanFreq|
-|fBodyBodyGyroJerkMag-mean()|FrequencyBodyGyroJerkMag.Mean|
-|fBodyBodyGyroJerkMag-std()|FrequencyBodyGyroJerkMag.Std|
-|fBodyBodyGyroJerkMag-meanFreq()|FrequencyBodyGyroJerkMag.MeanFreq|
-|angle(tBodyAccMean,gravity)|Angle.TimeBodyAccelerationMean.Gravity|
-|angle(tBodyAccJerkMean),gravityMean)|Angle.TimeBodyAccelerationJerkMean.GravityMean|
-|angle(tBodyGyroMean,gravityMean)|Angle.TimeBodyGyroMean.GravityMean|
-|angle(tBodyGyroJerkMean,gravityMean)|Angle.TimeBodyGyroJerkMean.GravityMean|
-|angle(X,gravityMean)|Angle.X.GravityMean|
-|angle(Y,gravityMean)|Angle.Y.GravityMean|
-|angle(Z,gravityMean)|Angle.Z.GravityMean|
+(subject) Subject - Study subject. Numeric categorical variable with levels 1 thorough 30.
+(label) Activity - Activity the study subjects engaged in. Categorical variable (Laying, Sitting, Standing, Walking, Walking Downstairs, Walking Upstairs).
+(tBodyAcc-mean()-X) TimeBodyAcceleration.Mean.X
+(tBodyAcc-mean()-Y) TimeBodyAcceleration.Mean.Y
+(tBodyAcc-mean()-Z) TimeBodyAcceleration.Mean.Z
+(tBodyAcc-std()-X) TimeBodyAcceleration.Std.X
+(tBodyAcc-std()-Y) TimeBodyAcceleration.Std.Y
+(tBodyAcc-std()-Z) TimeBodyAcceleration.Std.Z
+(tGravityAcc-mean()-X) TimeGravityAcceleration.Mean.X
+(tGravityAcc-mean()-Y) TimeGravityAcceleration.Mean.Y
+(tGravityAcc-mean()-Z) TimeGravityAcceleration.Mean.Z
+(tGravityAcc-std()-X) TimeGravityAcceleration.Std.X
+(tGravityAcc-std()-Y) TimeGravityAcceleration.Std.Y
+(tGravityAcc-std()-Z) TimeGravityAcceleration.Std.Z
+(tBodyAccJerk-mean()-X) TimeBodyAccelerationJerk.Mean.X
+(tBodyAccJerk-mean()-Y) TimeBodyAccelerationJerk.Mean.Y
+(tBodyAccJerk-mean()-Z) TimeBodyAccelerationJerk.Mean.Z
+(tBodyAccJerk-std()-X) TimeBodyAccelerationJerk.Std.X
+(tBodyAccJerk-std()-Y) TimeBodyAccelerationJerk.Std.Y
+(tBodyAccJerk-std()-Z) TimeBodyAccelerationJerk.Std.Z
+(tBodyGyro-mean()-X) TimeBodyGyro.Mean.X
+(tBodyGyro-mean()-Y) TimeBodyGyro.Mean.Y
+(tBodyGyro-mean()-Z) TimeBodyGyro.Mean.Z
+(tBodyGyro-std()-X) TimeBodyGyro.Std.X
+(tBodyGyro-std()-Y) TimeBodyGyro.Std.Y
+(tBodyGyro-std()-Z) TimeBodyGyro.Std.Z
+(tBodyGyroJerk-mean()-X) TimeBodyGyroJerk.Mean.X
+(tBodyGyroJerk-mean()-Y) TimeBodyGyroJerk.Mean.Y
+(tBodyGyroJerk-mean()-Z) TimeBodyGyroJerk.Mean.Z
+(tBodyGyroJerk-std()-X) TimeBodyGyroJerk.Std.X
+(tBodyGyroJerk-std()-Y) TimeBodyGyroJerk.Std.Y
+(tBodyGyroJerk-std()-Z) TimeBodyGyroJerk.Std.Z
+(tBodyAccMag-mean()) TimeBodyAccelerationMag.Mean
+(tBodyAccMag-std()) TimeBodyAccelerationMag.Std
+(tGravityAccMag-mean()) TimeGravityAccelerationMag.Mean
+(tGravityAccMag-std()) TimeGravityAccelerationMag.Std
+(tBodyAccJerkMag-mean()) TimeBodyAccelerationJerkMag.Mean
+(tBodyAccJerkMag-std()) TimeBodyAccelerationJerkMag.Std
+(tBodyGyroMag-mean()) TimeBodyGyroMag.Mean
+(tBodyGyroMag-std()) TimeBodyGyroMag.Std
+(tBodyGyroJerkMag-mean()) TimeBodyGyroJerkMag.Mean
+(tBodyGyroJerkMag-std()) TimeBodyGyroJerkMag.Std
+(fBodyAcc-mean()-X) FrequencyBodyAcceleration.Mean.X
+(fBodyAcc-mean()-Y) FrequencyBodyAcceleration.Mean.Y
+(fBodyAcc-mean()-Z) FrequencyBodyAcceleration.Mean.Z
+(fBodyAcc-std()-X) FrequencyBodyAcceleration.Std.X
+(fBodyAcc-std()-Y) FrequencyBodyAcceleration.Std.Y
+(fBodyAcc-std()-Z) FrequencyBodyAcceleration.Std.Z
+(fBodyAcc-meanFreq()-X) FrequencyBodyAcceleration.MeanFreq.X
+(fBodyAcc-meanFreq()-Y) FrequencyBodyAcceleration.MeanFreq.Y
+(fBodyAcc-meanFreq()-Z) FrequencyBodyAcceleration.MeanFreq.Z
+(fBodyAccJerk-mean()-X) FrequencyBodyAccelerationJerk.Mean.X
+(fBodyAccJerk-mean()-Y) FrequencyBodyAccelerationJerk.Mean.Y
+(fBodyAccJerk-mean()-Z) FrequencyBodyAccelerationJerk.Mean.Z
+(fBodyAccJerk-std()-X) FrequencyBodyAccelerationJerk.Std.X
+(fBodyAccJerk-std()-Y) FrequencyBodyAccelerationJerk.Std.Y
+(fBodyAccJerk-std()-Z) FrequencyBodyAccelerationJerk.Std.Z
+(fBodyAccJerk-meanFreq()-X) FrequencyBodyAccelerationJerk.MeanFreq.X
+(fBodyAccJerk-meanFreq()-Y) FrequencyBodyAccelerationJerk.MeanFreq.Y
+(fBodyAccJerk-meanFreq()-Z) FrequencyBodyAccelerationJerk.MeanFreq.Z
+(fBodyGyro-mean()-X) FrequencyBodyGyro.Mean.X
+(fBodyGyro-mean()-Y) FrequencyBodyGyro.Mean.Y
+(fBodyGyro-mean()-Z) FrequencyBodyGyro.Mean.Z
+(fBodyGyro-std()-X) FrequencyBodyGyro.Std.X
+(fBodyGyro-std()-Y) FrequencyBodyGyro.Std.Y
+(fBodyGyro-std()-Z) FrequencyBodyGyro.Std.Z
+(fBodyGyro-meanFreq()-X) FrequencyBodyGyro.MeanFreq.X
+(fBodyGyro-meanFreq()-Y) FrequencyBodyGyro.MeanFreq.Y
+(fBodyGyro-meanFreq()-Z) FrequencyBodyGyro.MeanFreq.Z
+(fBodyAccMag-mean()) FrequencyBodyAccelerationMag.Mean
+(fBodyAccMag-std()) FrequencyBodyAccelerationMag.Std
+(fBodyAccMag-meanFreq()) FrequencyBodyAccelerationMag.MeanFreq
+(fBodyBodyAccJerkMag-mean()) FrequencyBodyAccelerationJerkMag.Mean
+(fBodyBodyAccJerkMag-std()) FrequencyBodyAccelerationJerkMag.Std
+(fBodyBodyAccJerkMag-meanFreq()) FrequencyBodyAccelerationJerkMag.MeanFreq
+(fBodyBodyGyroMag-mean()) FrequencyBodyGyroMag.Mean
+(fBodyBodyGyroMag-std()) FrequencyBodyGyroMag.Std
+(fBodyBodyGyroMag-meanFreq()) FrequencyBodyGyroMag.MeanFreq
+(fBodyBodyGyroJerkMag-mean()) FrequencyBodyGyroJerkMag.Mean
+(fBodyBodyGyroJerkMag-std()) FrequencyBodyGyroJerkMag.Std
+(fBodyBodyGyroJerkMag-meanFreq()) FrequencyBodyGyroJerkMag.MeanFreq
+(angle(tBodyAccMean,gravity)) Angle.TimeBodyAccelerationMean.Gravity
+(angle(tBodyAccJerkMean),gravityMean)) Angle.TimeBodyAccelerationJerkMean.GravityMean
+(angle(tBodyGyroMean,gravityMean)) Angle.TimeBodyGyroMean.GravityMean
+(angle(tBodyGyroJerkMean,gravityMean)) Angle.TimeBodyGyroJerkMean.GravityMean
+(angle(X,gravityMean)) Angle.X.GravityMean
+(angle(Y,gravityMean)) Angle.Y.GravityMean
+(angle(Z,gravityMean)) Angle.Z.GravityMean
 ```
 
 
