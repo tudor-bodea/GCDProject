@@ -27,14 +27,14 @@ The following intermediate, support data sets are used to create the tidy data s
 
 
 #### 2. Outputs
-The `tidy` data frame of size 180 by 88 is obtained from the `data` data frame by averaging all the columns in `data` by `Subject` and `Activity` (via `summarise_each` and `group_by` commands from the contributed package [`dplyr`](http://cran.r-project.org/web/packages/dplyr/index.html)). The `tidy` data frame is printed to the pipe delimited file `TudorBodea_tidy.csv` via `write.table`. For convenience, the `write.table` R code snippet together with its complement, which allows one to read the file back in R, is provided below:
+The `tidy` data frame of size 180 by 88 is obtained from the `data` data frame by averaging all the columns in `data` by `Subject` and `Activity` (via `summarise_each` and `group_by` commands from the contributed package [`dplyr`](http://cran.r-project.org/web/packages/dplyr/index.html)). The `tidy` data frame is printed to the pipe delimited file `TudorBodea_tidy.txt` via `write.table`. For convenience, the `write.table` R code snippet together with its complement, which allows one to read the file back in R, is provided below:
 
 ```
 ##### WRITE TO FILE
-write.table(x=tidy, file="TudorBodea_tidy.csv", quote=FALSE, sep="|", 
+write.table(x=tidy, file="TudorBodea_tidy.txt", quote=FALSE, sep="|", 
 	row.names=FALSE, col.names=TRUE)
 ##### READ THE FILE BACK IN R
-replica <- read.table(file="TudorBodea_tidy.csv", header=TRUE, sep="|", 
+replica <- read.table(file="TudorBodea_tidy.txt", header=TRUE, sep="|", 
 	colClasses=c("integer","character",rep("numeric", times=86)))
 ```
 
