@@ -202,9 +202,12 @@ The 88 variables in the `tidy` data frame follow next:
 
 (fBodyAccMag-meanFreq()) **FrequencyBodyAccelerationMag.MeanFreq** - By subject and activity, the mean frequency of the magnitude of the frequency domain body acceleration.
 
-(fBodyBodyAccJerkMag-mean()) FrequencyBodyAccelerationJerkMag.Mean
-(fBodyBodyAccJerkMag-std()) FrequencyBodyAccelerationJerkMag.Std
-(fBodyBodyAccJerkMag-meanFreq()) FrequencyBodyAccelerationJerkMag.MeanFreq
+(fBodyBodyAccJerkMag-mean()) **FrequencyBodyAccelerationJerkMag.Mean** - By subject and activity, the mean magnitude of the frequency domain body acceleration jerk.
+
+(fBodyBodyAccJerkMag-std()) **FrequencyBodyAccelerationJerkMag.Std** - By subject and activity, the mean standard deviation of the magnitude of the frequency domain body acceleration jerk.
+
+(fBodyBodyAccJerkMag-meanFreq()) **FrequencyBodyAccelerationJerkMag.MeanFreq** - By subject and activity, the mean frequency of the magnitude of the frequency domain body acceleration jerk.
+
 (fBodyBodyGyroMag-mean()) FrequencyBodyGyroMag.Mean
 (fBodyBodyGyroMag-std()) FrequencyBodyGyroMag.Std
 (fBodyBodyGyroMag-meanFreq()) FrequencyBodyGyroMag.MeanFreq
