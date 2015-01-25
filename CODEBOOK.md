@@ -118,16 +118,26 @@ The table in this section lists and documents the content of the `tidy` data fra
 
 (tBodyGyroJerk-std()-Z) **TimeBodyGyroJerk.Std.Z** - By subject and activity, the mean of the standard deviation of the time domain body gyro jerk in the Z direction.
 
-(tBodyAccMag-mean()) TimeBodyAccelerationMag.Mean
-(tBodyAccMag-std()) TimeBodyAccelerationMag.Std
-(tGravityAccMag-mean()) TimeGravityAccelerationMag.Mean
-(tGravityAccMag-std()) TimeGravityAccelerationMag.Std
-(tBodyAccJerkMag-mean()) TimeBodyAccelerationJerkMag.Mean
-(tBodyAccJerkMag-std()) TimeBodyAccelerationJerkMag.Std
-(tBodyGyroMag-mean()) TimeBodyGyroMag.Mean
-(tBodyGyroMag-std()) TimeBodyGyroMag.Std
-(tBodyGyroJerkMag-mean()) TimeBodyGyroJerkMag.Mean
-(tBodyGyroJerkMag-std()) TimeBodyGyroJerkMag.Std
+(tBodyAccMag-mean()) **TimeBodyAccelerationMag.Mean** - By subject and activity, the mean of the magnitude of the time domain body acceleration.
+
+(tBodyAccMag-std()) **TimeBodyAccelerationMag.Std** - By subject and activity, the mean of the standard deviation of the magnitude of the time domain body acceleration.
+
+(tGravityAccMag-mean()) **TimeGravityAccelerationMag.Mean** - By subject and activity, the mean of the magnitude of the time domain gravity acceleration.
+
+(tGravityAccMag-std()) **TimeGravityAccelerationMag.Std** - By subject and activity, the mean of the standard deviation of the magnitude of the time domain gravity acceleration.
+
+(tBodyAccJerkMag-mean()) **TimeBodyAccelerationJerkMag.Mean** - By subject and activity, the mean of the magnitude of the time domain body acceleration jerk.
+
+(tBodyAccJerkMag-std()) **TimeBodyAccelerationJerkMag.Std** - By subject and activity, the mean of the standard deviation of the magnitude of the time domain body acceleration jerk.
+
+(tBodyGyroMag-mean()) **TimeBodyGyroMag.Mean** - By subject and activity, the mean of the magnitude of the time domain body gyro.
+
+(tBodyGyroMag-std()) **TimeBodyGyroMag.Std** - By subject and activity, the mean of the standard deviation of the magnitude of the time domain body gyro.
+
+(tBodyGyroJerkMag-mean()) **TimeBodyGyroJerkMag.Mean** - By subject and activity, the mean of the magnitude of the time domain body gyro jerk.
+
+(tBodyGyroJerkMag-std()) **TimeBodyGyroJerkMag.Std** - By subject and activity, the mean of the standard deviation of the magnitude of the time domain body gyro jerk.
+
 (fBodyAcc-mean()-X) FrequencyBodyAcceleration.Mean.X
 (fBodyAcc-mean()-Y) FrequencyBodyAcceleration.Mean.Y
 (fBodyAcc-mean()-Z) FrequencyBodyAcceleration.Mean.Z
