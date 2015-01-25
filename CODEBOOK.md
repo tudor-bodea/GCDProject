@@ -26,7 +26,7 @@ The following intermediate, support data sets are used to create the tidy data s
 **(xi)** Data frame `data` of size 10,299 by 563 combines by rows the training and test data frames `tg` and `tt`.
 
 
-#### 2. Output
+#### 2. Outputs
 The `tidy` data frame is obtained from the `data` data frame by averaging all the columns in `data` by `Subject` and `Activity` (via `summarise_each` and `group_by` commands from the contributed package [`dplyr`](http://cran.r-project.org/web/packages/dplyr/index.html)). The `tidy` data frame is printed to the pipe delimited file `TudorBodea_tidy.csv` via `write.table`. For convenience, the `write.table` R code snippet together with its complement, which allows one to read the file back in R, is provided below:
 
 ```
