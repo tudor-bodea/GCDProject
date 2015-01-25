@@ -48,9 +48,8 @@ When the `data` data frame is first computed, it consists of a column `subject` 
 
 **(iii)** The names of the 88 remaining variables are revisited and changed as per the recommendations provided in Google's R Style Guide for Variable Naming (which is available [here](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)). The changes include: (1) `-` are replaced by `.`, (2) `T` and `F` are expanded and replaced by `Time` and `Frequency`, respectively, (3) `Acc` is expanded and replaced by `Acceleration`, (4) `()` is replaced by an empty string, (5) `BodyBody` is replaced by `Body`, (6) `(,`, `)`, and `,` are all replaced by `.`, and, (7) the Camel case format is enforced. The original as well as the revisited variable names are provided in the table from the next section.
 
+**(iv)** The `tidy` data frame of size 180 by 88 is obtained from the `data` data frame by averaging all the columns in `data` by `Subject` and `Activity` (via `summarise_each` and `group_by` commands from the contributed package [`dplyr`](http://cran.r-project.org/web/packages/dplyr/index.html)). Although the entries in the columns of the `tidy` data frame are averages, **the names of the columns are preserved** when the summary activities take place.
 
-
-!!!!! We preserve the names of the columns
 
 #### 4. Output Data Dictionary
 
