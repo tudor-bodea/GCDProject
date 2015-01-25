@@ -56,11 +56,14 @@ The table in this section lists and documents the content of the `tidy` data fra
 
 (subject) **Subject** - Study subject. Numeric categorical variable with levels 1 thorough 30.
 
-(label) **Activity** - Activity the study subjects engaged in. Categorical variable (Laying, Sitting, Standing, Walking, Walking Downstairs, Walking Upstairs).
+(label) **Activity** - Activity the study subjects engaged in. Categorical variable with 6 levels: Laying, Sitting, Standing, Walking, Walking Downstairs, Walking Upstairs.
 
-(tBodyAcc-mean()-X) TimeBodyAcceleration.Mean.X
-(tBodyAcc-mean()-Y) TimeBodyAcceleration.Mean.Y
-(tBodyAcc-mean()-Z) TimeBodyAcceleration.Mean.Z
+(tBodyAcc-mean()-X) **TimeBodyAcceleration.Mean.X** - By subject and activity, the mean of the time domain body acceleration in the X direction.
+
+(tBodyAcc-mean()-Y) **TimeBodyAcceleration.Mean.Y** - By subject and activity, the mean of the time domain body acceleration in the Y direction.
+
+(tBodyAcc-mean()-Z) **TimeBodyAcceleration.Mean.Z** - By subject and activity, the mean of the time domain body acceleration in the Z direction.
+
 (tBodyAcc-std()-X) TimeBodyAcceleration.Std.X
 (tBodyAcc-std()-Y) TimeBodyAcceleration.Std.Y
 (tBodyAcc-std()-Z) TimeBodyAcceleration.Std.Z
