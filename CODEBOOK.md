@@ -190,12 +190,18 @@ The 88 variables in the `tidy` data frame follow next:
 
 (fBodyGyro-std()-Z) **FrequencyBodyGyro.Std.Z** - By subject and activity, the mean of standard deviation of the frequency domain body gyro in the Z direction.
 
-(fBodyGyro-meanFreq()-X) FrequencyBodyGyro.MeanFreq.X
-(fBodyGyro-meanFreq()-Y) FrequencyBodyGyro.MeanFreq.Y
-(fBodyGyro-meanFreq()-Z) FrequencyBodyGyro.MeanFreq.Z
-(fBodyAccMag-mean()) FrequencyBodyAccelerationMag.Mean
-(fBodyAccMag-std()) FrequencyBodyAccelerationMag.Std
-(fBodyAccMag-meanFreq()) FrequencyBodyAccelerationMag.MeanFreq
+(fBodyGyro-meanFreq()-X) **FrequencyBodyGyro.MeanFreq.X** - By subject and activity, the mean frequency of the frequency domain body gyro in the X direction.
+
+(fBodyGyro-meanFreq()-Y) **FrequencyBodyGyro.MeanFreq.Y** - By subject and activity, the mean frequency of the frequency domain body gyro in the Y direction.
+
+(fBodyGyro-meanFreq()-Z) **FrequencyBodyGyro.MeanFreq.Z** - By subject and activity, the mean frequency of the frequency domain body gyro in the Z direction.
+
+(fBodyAccMag-mean()) **FrequencyBodyAccelerationMag.Mean** - By subject and activity, the mean magnitude of the frequency domain body acceleration.
+
+(fBodyAccMag-std()) **FrequencyBodyAccelerationMag.Std** - By subject and activity, the mean standard deviation of the magnitude of the frequency domain body acceleration.
+
+(fBodyAccMag-meanFreq()) **FrequencyBodyAccelerationMag.MeanFreq** - By subject and activity, the mean frequency of the magnitude of the frequency domain body acceleration.
+
 (fBodyBodyAccJerkMag-mean()) FrequencyBodyAccelerationJerkMag.Mean
 (fBodyBodyAccJerkMag-std()) FrequencyBodyAccelerationJerkMag.Std
 (fBodyBodyAccJerkMag-meanFreq()) FrequencyBodyAccelerationJerkMag.MeanFreq
