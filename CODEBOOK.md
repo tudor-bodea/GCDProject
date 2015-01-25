@@ -64,24 +64,42 @@ The table in this section lists and documents the content of the `tidy` data fra
 
 (tBodyAcc-mean()-Z) **TimeBodyAcceleration.Mean.Z** - By subject and activity, the mean of the time domain body acceleration in the Z direction.
 
-(tBodyAcc-std()-X) TimeBodyAcceleration.Std.X
-(tBodyAcc-std()-Y) TimeBodyAcceleration.Std.Y
-(tBodyAcc-std()-Z) TimeBodyAcceleration.Std.Z
-(tGravityAcc-mean()-X) TimeGravityAcceleration.Mean.X
-(tGravityAcc-mean()-Y) TimeGravityAcceleration.Mean.Y
-(tGravityAcc-mean()-Z) TimeGravityAcceleration.Mean.Z
-(tGravityAcc-std()-X) TimeGravityAcceleration.Std.X
-(tGravityAcc-std()-Y) TimeGravityAcceleration.Std.Y
-(tGravityAcc-std()-Z) TimeGravityAcceleration.Std.Z
+(tBodyAcc-std()-X) **TimeBodyAcceleration.Std.X** - By subject and activity, the mean of the time domain body acceleration standard deviation in the X direction.
+
+(tBodyAcc-std()-Y) **TimeBodyAcceleration.Std.Y** - By subject and activity, the mean of the time domain body acceleration standard deviation in the Y direction.
+
+(tBodyAcc-std()-Z) **TimeBodyAcceleration.Std.Z** - By subject and activity, the mean of the time domain body acceleration standard deviation in the Z direction.
+
+(tGravityAcc-mean()-X) **TimeGravityAcceleration.Mean.X** - By subject and activity, the mean of the time domain gravity acceleration in the X direction.
+
+(tGravityAcc-mean()-Y) **TimeGravityAcceleration.Mean.Y** - By subject and activity, the mean of the time domain gravity acceleration in the Y direction.
+
+(tGravityAcc-mean()-Z) **TimeGravityAcceleration.Mean.Z** - By subject and activity, the mean of the time domain gravity acceleration in the Z direction.
+
+(tGravityAcc-std()-X) **TimeGravityAcceleration.Std.X** - By subject and activity, the mean of the time domain gravity acceleration standard deviation in the X direction.
+
+(tGravityAcc-std()-Y) **TimeGravityAcceleration.Std.Y** - By subject and activity, the mean of the time domain gravity acceleration standard deviation in the Y direction.
+
+(tGravityAcc-std()-Z) **TimeGravityAcceleration.Std.Z** - By subject and activity, the mean of the time domain gravity acceleration standard deviation in the Z direction.
+
 (tBodyAccJerk-mean()-X) TimeBodyAccelerationJerk.Mean.X
+
 (tBodyAccJerk-mean()-Y) TimeBodyAccelerationJerk.Mean.Y
+
 (tBodyAccJerk-mean()-Z) TimeBodyAccelerationJerk.Mean.Z
+
 (tBodyAccJerk-std()-X) TimeBodyAccelerationJerk.Std.X
+
 (tBodyAccJerk-std()-Y) TimeBodyAccelerationJerk.Std.Y
+
 (tBodyAccJerk-std()-Z) TimeBodyAccelerationJerk.Std.Z
+
 (tBodyGyro-mean()-X) TimeBodyGyro.Mean.X
+
 (tBodyGyro-mean()-Y) TimeBodyGyro.Mean.Y
+
 (tBodyGyro-mean()-Z) TimeBodyGyro.Mean.Z
+
 (tBodyGyro-std()-X) TimeBodyGyro.Std.X
 (tBodyGyro-std()-Y) TimeBodyGyro.Std.Y
 (tBodyGyro-std()-Z) TimeBodyGyro.Std.Z
