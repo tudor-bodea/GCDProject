@@ -154,15 +154,24 @@ The 88 variables in the `tidy` data frame follow next:
 
 (fBodyAcc-std()-Z) **FrequencyBodyAcceleration.Std.Z** - By subject and activity, the mean of the standard deviation of the frequency domain body acceleration in the Z direction.
 
-(fBodyAcc-meanFreq()-X) FrequencyBodyAcceleration.MeanFreq.X
-(fBodyAcc-meanFreq()-Y) FrequencyBodyAcceleration.MeanFreq.Y
-(fBodyAcc-meanFreq()-Z) FrequencyBodyAcceleration.MeanFreq.Z
-(fBodyAccJerk-mean()-X) FrequencyBodyAccelerationJerk.Mean.X
-(fBodyAccJerk-mean()-Y) FrequencyBodyAccelerationJerk.Mean.Y
-(fBodyAccJerk-mean()-Z) FrequencyBodyAccelerationJerk.Mean.Z
-(fBodyAccJerk-std()-X) FrequencyBodyAccelerationJerk.Std.X
-(fBodyAccJerk-std()-Y) FrequencyBodyAccelerationJerk.Std.Y
-(fBodyAccJerk-std()-Z) FrequencyBodyAccelerationJerk.Std.Z
+(fBodyAcc-meanFreq()-X) **FrequencyBodyAcceleration.MeanFreq.X** - By subject and activity, the mean frequency of the frequency domain body acceleration in the X direction.
+
+(fBodyAcc-meanFreq()-Y) **FrequencyBodyAcceleration.MeanFreq.Y** - By subject and activity, the mean frequency of the frequency domain body acceleration in the Y direction.
+
+(fBodyAcc-meanFreq()-Z) **FrequencyBodyAcceleration.MeanFreq.Z** - By subject and activity, the mean frequency of the frequency domain body acceleration in the Z direction.
+
+(fBodyAccJerk-mean()-X) **FrequencyBodyAccelerationJerk.Mean.X** - By subject and activity, the mean of the frequency domain body acceleration jerk in the X direction.
+
+(fBodyAccJerk-mean()-Y) **FrequencyBodyAccelerationJerk.Mean.Y** - By subject and activity, the mean of the frequency domain body acceleration jerk in the Y direction.
+
+(fBodyAccJerk-mean()-Z) **FrequencyBodyAccelerationJerk.Mean.Z** - By subject and activity, the mean of the frequency domain body acceleration jerk in the Z direction.
+
+(fBodyAccJerk-std()-X) **FrequencyBodyAccelerationJerk.Std.X** - By subject and activity, the mean of standard deviation of the frequency domain body acceleration jerk in the X direction.
+
+(fBodyAccJerk-std()-Y) **FrequencyBodyAccelerationJerk.Std.Y** - By subject and activity, the mean of standard deviation of the frequency domain body acceleration jerk in the Y direction.
+
+(fBodyAccJerk-std()-Z) **FrequencyBodyAccelerationJerk.Std.Z** - By subject and activity, the mean of standard deviation of the frequency domain body acceleration jerk in the Z direction.
+
 (fBodyAccJerk-meanFreq()-X) FrequencyBodyAccelerationJerk.MeanFreq.X
 (fBodyAccJerk-meanFreq()-Y) FrequencyBodyAccelerationJerk.MeanFreq.Y
 (fBodyAccJerk-meanFreq()-Z) FrequencyBodyAccelerationJerk.MeanFreq.Z
