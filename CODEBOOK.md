@@ -1,5 +1,5 @@
 #### 1. Inputs and Raw Data Sources
-The following inputs are used to create the tidy data set:
+The following inputs are used to create the intermediate, support data sets:
 
 **(i)** Data frame `f` of size 561 x 2 reads the features from the raw data set `./UCI HAR Dataset/features.txt`,
 
@@ -17,7 +17,13 @@ The following inputs are used to create the tidy data set:
 
 **(viii)** Data frame `tt.d` of size 2,947 x 561 reads the measurement data for the test set from the raw data set `./UCI HAR Dataset/test/x_train.txt`.
 
+The following intermediate, support data sets are used to create the tidy data set:
 
+**(ix)** Data frame `tg` of size 7,352 by 563 combines by columns training data frames `tg.s`, `tg.l`, and, `tg.d`,
+
+**(x)** Data frame `tt` of size 2,947 by 563 combines by columns test data frames `tt.s`, `tt.l`, and, `tt.d`,
+
+**(xi)** Data frame `data` of size 10,299 by 563 combines by rows the training and test data frames `tg` and `tt`.
 
 #### 2. Output
 
