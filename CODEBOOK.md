@@ -40,7 +40,7 @@ replica <- read.table(file="TudorBodea_tidy.csv", header=TRUE, sep="|",
 
 
 #### 3. Process
-When the `data` data frame is first computed, it consists of a column `subject` that identifies the study subjects, a column `label` that provides the numeric codes for the activities the study subjects engaged in, and other 561 measurement data columns identified by the names provided in the feature raw data set. Through a series of intuitive data steps, this data frame is transformed and ultimately used to create the `tidy` data frame. These data steps are documented below:
+When the `data` data frame is first computed, it consists of a column `subject` that identifies the study subjects, a column `label` that provides the numeric codes for the activities the study subjects engaged in, and other 561 measurement data columns identified by the names provided in the feature raw data set. Through a series of connected data steps, this data frame is transformed and ultimately used to create the `tidy` data frame. The process that incorporates the data steps is documented below:
 
 **(i)** Test
 
