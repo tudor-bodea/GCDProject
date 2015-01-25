@@ -172,15 +172,24 @@ The 88 variables in the `tidy` data frame follow next:
 
 (fBodyAccJerk-std()-Z) **FrequencyBodyAccelerationJerk.Std.Z** - By subject and activity, the mean of standard deviation of the frequency domain body acceleration jerk in the Z direction.
 
-(fBodyAccJerk-meanFreq()-X) FrequencyBodyAccelerationJerk.MeanFreq.X
-(fBodyAccJerk-meanFreq()-Y) FrequencyBodyAccelerationJerk.MeanFreq.Y
-(fBodyAccJerk-meanFreq()-Z) FrequencyBodyAccelerationJerk.MeanFreq.Z
-(fBodyGyro-mean()-X) FrequencyBodyGyro.Mean.X
-(fBodyGyro-mean()-Y) FrequencyBodyGyro.Mean.Y
-(fBodyGyro-mean()-Z) FrequencyBodyGyro.Mean.Z
-(fBodyGyro-std()-X) FrequencyBodyGyro.Std.X
-(fBodyGyro-std()-Y) FrequencyBodyGyro.Std.Y
-(fBodyGyro-std()-Z) FrequencyBodyGyro.Std.Z
+(fBodyAccJerk-meanFreq()-X) **FrequencyBodyAccelerationJerk.MeanFreq.X** - By subject and activity, the mean frequency of the frequency domain body acceleration jerk in the X direction.
+
+(fBodyAccJerk-meanFreq()-Y) **FrequencyBodyAccelerationJerk.MeanFreq.Y** - By subject and activity, the mean frequency of the frequency domain body acceleration jerk in the Y direction.
+
+(fBodyAccJerk-meanFreq()-Z) **FrequencyBodyAccelerationJerk.MeanFreq.Z** - By subject and activity, the mean frequency of the frequency domain body acceleration jerk in the Z direction.
+
+(fBodyGyro-mean()-X) **FrequencyBodyGyro.Mean.X** - By subject and activity, the mean of the frequency domain body gyro in the X direction.
+
+(fBodyGyro-mean()-Y) **FrequencyBodyGyro.Mean.Y** - By subject and activity, the mean of the frequency domain body gyro in the Y direction.
+
+(fBodyGyro-mean()-Z) **FrequencyBodyGyro.Mean.Z** - By subject and activity, the mean of the frequency domain body gyro in the Z direction.
+
+(fBodyGyro-std()-X) **FrequencyBodyGyro.Std.X** - By subject and activity, the mean of standard deviation of the frequency domain body gyro in the X direction.
+
+(fBodyGyro-std()-Y) **FrequencyBodyGyro.Std.Y** - By subject and activity, the mean of standard deviation of the frequency domain body gyro in the Y direction.
+
+(fBodyGyro-std()-Z) **FrequencyBodyGyro.Std.Z** - By subject and activity, the mean of standard deviation of the frequency domain body gyro in the Z direction.
+
 (fBodyGyro-meanFreq()-X) FrequencyBodyGyro.MeanFreq.X
 (fBodyGyro-meanFreq()-Y) FrequencyBodyGyro.MeanFreq.Y
 (fBodyGyro-meanFreq()-Z) FrequencyBodyGyro.MeanFreq.Z
